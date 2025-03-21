@@ -1,10 +1,8 @@
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 // Supabase Configuration (replace with actual values)
-const SUPABASE_URL = "https://fmtzufgmbciovdxflkqm.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZtdHp1ZmdtYmNpb3ZkeGZsa3FtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNDE4MzU2MCwiZXhwIjoyMDQ5NzU5NTYwfQ.ZHuLemZsLLfLVZSL07_a72JH7PXyE1fDwHReuoRVTOk";
-
-// Initialize Supabase Client
+const SUPABASE_URL = "YOUR_SUPABASE_URL";
+const SUPABASE_KEY = "YOUR_SUPABSE_KEY";
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Deno server to handle incoming requests
