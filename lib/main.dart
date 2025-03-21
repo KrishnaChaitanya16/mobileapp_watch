@@ -120,9 +120,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // Function to send FCM token to your Supabase backend
   Future<void> _storeFcmToken(String fcmToken, String deviceType) async {
-    final String apiUrl = 'https://fmtzufgmbciovdxflkqm.supabase.co/functions/v1/storeFcmToken'; // Your backend URL here
-    final String bearerToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZtdHp1ZmdtYmNpb3ZkeGZsa3FtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczNDE4MzU2MCwiZXhwIjoyMDQ5NzU5NTYwfQ.ZHuLemZsLLfLVZSL07_a72JH7PXyE1fDwHReuoRVTOk'; // Replace with your actual token
-
+    final String apiUrl = 'YOUR_FUNCTION_URL'; // Your backend URL here
+    final String bearerToken = 'YOUR_SUPABASE_KEY';
     try {
       final response = await http.post(
         Uri.parse(apiUrl),
